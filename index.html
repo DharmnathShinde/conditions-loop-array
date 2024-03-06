@@ -4,15 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
-    <h1>1] if else statement</h1>
+    <nav>
+      <img onclick="load()" src="img.svg" alt="">
+    </nav>
+    <div id="nav">
+      <h2>one</h2>
+      <h2>two</h2>
+      <h2>three</h2>
+      <h2>four </h2>
+    </div>
+    
+    
+<div>    <h1>1] if else statement</h1>
     <h2>enter your age</h2>
     <input type="number" id="ss" value="3" />
     <p id="op"></p>
     <button onclick="cal()">submit</button>
-    <br />
-    <br />
+  </div>
+<div>
     <h1>2]Switch case</h1>
     <h2>
       enter 1 for addition,2 for substraction,3 for multiplication,4 for
@@ -21,41 +34,34 @@
     <input type="number" id="switch" />
     <button onclick="swich()">click</button>
     <p id="options"></p>
-    <br> <br>
+  </div>
+  <div> 
     <h1>3]for loop</h1>
-    <script>
-      let s = document.getElementById("ss");
-
-      function cal() {
-        let a = parseInt(s.value);
-        if (a >= 18) {
-          document.getElementById("op").innerText = "you can drive car";
-        } else {
-          document.getElementById("op").innerText = "you can't drive";
-        }
-      }
-
-      let sw = document.getElementById("switch");
-      function swich() {
-        let b = parseInt(sw.value);
-        switch (b) {
-          case 1:
-            document.getElementById("options").innerHTML =
-              "you choose adition option";
-            break;
-          case 2:
-            document.getElementById("options").innerHTML =
-              "you choose substraction option";
-            break;
-          case 3:
-            document.getElementById("options").innerHTML =
-              "you choose multiplication option";
-              break;
-          default:  document.getElementById("options").innerHTML =
-              "wrong choise";
-            break;
-        }
-      }
-    </script>
+    <h2>enter number which you want table</h2>
+    <input type="number" id="t" />
+    <button onclick="table()">Enter</button>
+    <div id="st"></div>
+  </div>
+  <div>
+    <h1>4] Display list</h1>
+    <ul id="list">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+    </ul>
+    <button onclick="display()">display</button>
+  </div>
+  <div>
+    <h1>5]clone array</h1>
+    <p id="clone"></p>
+    <button onclick="clon()">clone</button>
+  <!-- <h1>6]use find() in array</h1>
+    <div id="arr"></div>
+    <p>enter the number for the nearer number or greter number</p>
+<input type="number" id="in">
+    <p id="op"></p>
+    <button onclick="sub()">submit</button> -->
+  </div>
   </body>
 </html>

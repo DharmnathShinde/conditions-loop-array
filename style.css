@@ -1,4 +1,51 @@
-h1{
-  color: yellow;
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  overflow-x:hidden ;
+  margin: 0px;
+  padding: 10px;
+}
+table, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+ul{
+  display: none;
+}
+img{
+  display: none;
+}
+body{
+  background-color: #E02363;
+  color: #FFFFFF;
+}
+#nav{
+  display: none;
+}
+@media screen and (max-width:440px) {
+  img{
+    display: block;
+    width:8vh;
+  }
+  
+  nav{
+  
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 9% ;
 
+
+}
+#nav{
+  text-align: center;
+flex-direction: column;
+}
+#nav>h2{
+  border: 2px solid black;
+  background-color: aqua  ;
+  color: black;
+  width: aut;
+}
 }
