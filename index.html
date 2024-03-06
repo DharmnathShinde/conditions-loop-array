@@ -29,7 +29,33 @@
     <input type="number" id="t" />
     <button onclick="table()">Enter</button>
   <div id="st"></div>
+
+     <h1>4] Display list</h1>
+     <ul id="list">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+      <li>four</li>
+     </ul>
+     <button onclick="display()">display</button>
+
+     <h1>5]clone array</h1>
+     <p id="clone"></p>
+     <button onclick="clon()" >clone</button>
   <script>
+   var  array=["one","two","three"]
+    document.getElementById('clone').innerHTML=array;
+   function clon(){
+    var arr2 =array.slice()
+  const node=document.createTextNode("    "+arr2)
+    document.getElementById("clone").appendChild(node)
+    console.log(arr2)
+   }
+
+    function display(){
+      let k=document.getElementById("list")
+      k.style.display="block"
+     }
 
       function table() {
         
