@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>javascript</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>1] if else statement</h1>
@@ -21,9 +22,29 @@
     <input type="number" id="switch" />
     <button onclick="swich()">click</button>
     <p id="options"></p>
-    <br> <br>
+    <br />
+    <br />
     <h1>3]for loop</h1>
-    <script>
+    <h2>enter number which you want table</h2>
+    <input type="number" id="t" />
+    <button onclick="table()">Enter</button>
+  <div id="st"></div>
+  <script>
+
+      function table() {
+        
+      let tabl = document.getElementById("t");
+        let tab = parseInt(tabl.value);
+        let t = document.getElementById("st");
+        var tablehtml="<table>";
+        for (i = 1; i <= 10; i++) {
+          let mult=i*tab
+          tablehtml+="<tr><td>"+mult+"</td></tr>"
+        }
+        tablehtml+="</table>"
+        t.innerHTML=tablehtml;
+        console.log(tablehtml)
+      }
       let s = document.getElementById("ss");
 
       function cal() {
@@ -50,9 +71,9 @@
           case 3:
             document.getElementById("options").innerHTML =
               "you choose multiplication option";
-              break;
-          default:  document.getElementById("options").innerHTML =
-              "wrong choise";
+            break;
+          default:
+            document.getElementById("options").innerHTML = "wrong choise";
             break;
         }
       }
